@@ -1,0 +1,32 @@
+<form name="formulario" method="POST" data-netlify="true" enctype="multipart/form-data">
+    <input type="hidden" name="form-name" value="formulario">
+
+    <p>
+        <label>Nome completo <input type="text" name="nome" required /></label>
+    </p>
+    <p>
+        <label>E-mail <input type="email" name="email" required /></label>
+    </p>
+    <p>
+        <label>Confirme seu E-mail <input type="email" name="confirme-email" required /></label>
+    </p>
+    <p>
+        <label>RG <input type="text" name="rg" required pattern="^\d{1,9}$" title="Digite apenas números, até 9 dígitos" /></label>
+    </p>
+    <p>
+        <label>Senha <input type="password" name="senha" required /></label>
+    </p>
+    <p>
+        <label>Confirme sua Senha <input type="password" name="confirme-senha" required /></label>
+    </p>
+    <p>
+        <label>Foto do RG (Frente): <input type="file" name="foto-frente" accept="image/*" required /></label>
+    </p>
+    <p>
+        <label>Foto do RG (Verso): <input type="file" name="foto-verso" accept="image/*" required /></label>
+    </p>
+
+    <p>
+        <button type="submit">Enviar</button>
+    </p>
+</form>
